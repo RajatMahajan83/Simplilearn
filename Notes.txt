@@ -1,0 +1,162 @@
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/RajatMahajan83/Simplilearn.git
+git push -u origin master
+
+
+To check for GitHub Repo connection:
+
+git remote -v
+
+
+To check for current folder
+
+git status
+
+
+For creating branch:
+
+git checkout -b branchname
+git add .
+git commit -m "some message"
+git push -u origin branchname
+
+
+
+FrontEnd:
+
+HTML, CSS, Angular, React, Vue
+
+BackEnd:
+
+Java, Node.js, Ruby, Python
+
+
+Databases:
+
+MySql, Oracle, MongoDB
+
+
+
+
+
+JRE Vs JDK
+
+Java Runtime Environment - To run Java Apps
+Java Development Kit  -  Provides Tool required to create Java App
+  
+
+
+To run java from command line:
+
+Copy this C:\Program Files\Java\jdk-14\bin
+
+To set up the path:
+
+Go to Control Panel > System and Security > System > Advanced System Settings > Click on Environment Variable > Click New for System Variables > Give name and path (C:\Program Files\Java\jdk-14\bin).
+
+
+
+
+To check Java installed or not for Windows:
+
+java -version in command line
+
+
+
+
+IDE - Integrated Development Environment
+
+We will be using Intellij IDE by Jet Brains ( Intellij supports Java SE and Android)
+
+
+
+Public - This particular class accessible anywhere
+Static - we can call this method directly without creating object
+Void   - return type
+Main   - Name of the class
+
+//Three ways to Comment the code:
+1) Line Comment using //
+2) Block Comment using /*...*/
+3) Javadoc Comment using /**...*/
+
+Variable is a storage location used to store any set of data.
+Variables can be of different types:
+
+Primitive data types are those which are built in the language and there are 4 in Java
+1) Integer
+2) Floating Point
+3) Character
+4) Boolean
+
+
+Integer is divided into 4 sections:
+
+   Type   Size   Min. Value   Max. Value       format
+
+1) Byte   8  bits   -128 	128               0
+2) short  16 bits   -32768	32767		  0
+3) int	  32 bits   -214783648	214783647	  0
+4) long   64 bits				  0L	
+
+
+Floating Point
+
+float    32 bit  0.0f
+double   64 bit	 0.0 or 0.0d
+
+boolean pass = true;
+boolean pass = false;
+
+
+
+
+Arithmetic Operators
+
+
+1) Basic Operators like + - / * %
+2) Prefix and Postfix operators like ++ --
+3) Compound assignment operators like += -+ /= *= %=
+
+
+string + string = string
+string + number = string
+number + string = string
+number + number = number
+
+
+
+Smallervalue%Largervalue then the Modulus is Smallervalue
+
+Prefix applies operation before returning value,
+Postfix applies operation after returning value,
+
+
+Prefix is increment by 1
+Postfix is decrement by 1
+
+
+
+
+Compound assignment operators
+
+It is a combination of operation and assignment
+Applies result of right side to left side and store that result in variable
+on left side
+ 
+
+Type conversion
+
+
+There are two types of type conversions:
+
+1) Implicit
+2) Explicit
+
+
+
+
+
+
