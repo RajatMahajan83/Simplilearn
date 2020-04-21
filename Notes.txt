@@ -156,6 +156,259 @@ There are two types of type conversions:
 2) Explicit
 
 
+Relational Operators:
+
+>,>=,==,<,<=,!=
+
+
+
+Conditional Assignment:
+
+It is kind of single line if else condition
+if something happens we do this n if that doesnt happen we do that.
+
+Example:
+
+result = some condition. If condition is true then true part of the code executes else false part
+of the code executes
+
+result = 10 > 5  ?   10-1:10+1
+
+
+Conditions:
+
+If Else statement:
+
+if (condition) 
+
+ true-statement;
+
+else 
+
+false-statement;
+
+
+
+
+If Else If Statement:
+
+if (condition)
+
+statement;
+
+elseif (condition)
+
+statement;
+
+else (condition)
+
+statement;
+
+
+
+Nested If Condition:
+
+if (test1>test2)
+            if (test2>test3)
+                System.out.println("test1 is greater. " + "value of test1 is " +test1);
+
+            else
+
+                System.out.println("test2 is greater. " + "value of test2 is " +test2);
+
+else
+    System.out.println("test3 is greater. " + "value of test3 is " +test3);
+
+
+
+
+
+
+
+Local Variables: Accesible only in the local scope
+
+Global Variables: Accessible globally.
+
+Example of Local and Global Variables:
+
+
+        int test1 = 20;
+        int test2 = 25;
+        int test3 = 35;
+        String text2 = "I am outside the block";
+
+        if (test1 < test2) {
+            String text1 = "I am inside the block";
+            System.out.println("test1 is smaller");
+            System.out.println("text1>>> " + text1);
+
+        } else {
+            System.out.println("test2 is smaller");
+        }
+
+        //System.out.println("text1>>> " + text1);
+        System.out.println("text2>>>> " + text2);
+
+
+
+
+
+Logical Operators:
+
+And         &                 
+OR          |   
+XOR         ^
+Negation    !   
+
+Example:
+
+        int a = 20, b = 10, c = 5;
+
+        if (a>b & b>c)
+            System.out.println("a is greatest");
+
+
+Conditional Logical Operators:
+
+Conditional And   &&
+
+Conditional Or    ||
+
+&& - Only execute right-side if left side is true
+|| - Only execute right-side if left side is false
+
+
+Example:
+
+you are admin && you have access = Allow if both true
+you are admin || you have access = Allow if anyone true
+
+
+
+
+Switch Case:
+
+
+switch (condition) {
+case out1:
+execute
+case out2:
+execute
+default:
+execute
+}
+
+
+
+
+Looping:
+
+1) While Loop
+2) Do While Loop
+3) For Loop
+
+
+
+
+
+While Loop:
+
+Repeatedly execute the statement as long as the condition is true.
+Condition check at the loop start
+Statement may never execute
+
+   int a = 10;
+
+
+        while (a>=1){
+            System.out.println("Value of a = "+a);
+            a--;
+
+        }
+
+Do While Loop:
+
+Repeatedly execute the statement as long as the condition is true.
+Condition check at the end
+statement always executes atlease once
+
+
+
+        int a = 10;
+
+do{
+
+
+    System.out.println("Value of a = "+a);
+    a--;
+
+}
+        while (a>=1);
+
+
+
+
+
+For Loop:
+
+
+Repeatedly execute the statement as long as the condition is true.
+Condition check at the loop start
+Provide simplified notation for loop control value
+
+
+        System.out.println("The output is ");
+
+
+                for (int a = 10; a >=1 ; a--)
+        {
+            System.out.println(a);
+        }
+
+
+
+
+Array:
+
+It is a collection of hetrogenous data types
+Provide an ordered collection of elements.
+Each element accessed via an index
+index range from 0 to number of elements - 1
+Number of elements can be found via array length
+
+        float[] mymarks = new float[3];
+        mymarks[0] = 10.0f;
+        mymarks[1] = 20.0f;
+mymarks[2] = 30.0f;
+
+float sum = 0.0f;
+
+
+        for ( int i=0; i < mymarks.length;i++)
+
+            sum = sum + mymarks[i];
+        System.out.println(sum);
+
+
+
+For Each:
+
+     int [] marks = {10,20,30,40};
+        int total = 0;
+
+        for (int initVal: marks) {
+
+            total = total + initVal;
+        }
+        System.out.println(total);
+
+
+
+
+
+
+
+
 
 
 
