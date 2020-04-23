@@ -410,6 +410,136 @@ For Each:
 
 
 
+Classes:
+
+
+Jave is an object oriented language.
+Object encapsulate data, operations and usage semantics
+Class Allows storage and manipulation details details to be hiddenn.
+Separate what is to be done from how it is done
+Write a logic in one class and calling that logic in another.
+
+Class is made up of both state and executable code.
+
+- fields (parameters) = store object state. These are like variables.
+
+- Methods = executable code that manipulate states and performs operations.
+
+- Semantics are logics, declarations
+
+- Constructors = executable code used during object creation to set initial state. First thing called inside the class.
+
+
+flight is the name of the class
+passengers and seats are fields
+void add1Passenger() - This is the method
+Flights () - This is the constructor
+
+class flight{                ===== This is the class   
+ 
+int passengers;
+int seats;                    ====== passengers and seats are fields
+
+
+Flight() {                  ================== This is the constructor
+
+seats = 150;
+passengers = 0;
+
+}
+
+void add1Passenger(){                   ====================== This is the method
+ 
+ if (passengers < seats) {
+
+passengers = passengers + 1;
+
+} 
+
+}
+
+
+}
+
+whenever someone calls a class, they will get the constructor and the method.
+
+
+
+
+With new keyword we create instance or object of that class.
+
+
+nyctoSf is the class name
+nyctoSf is the object of the Flight class
+slcToDallas is the class name
+slcToDallas is the object of the class
+
+
+Flight nyctoSf;
+
+nycSf = new Flight ();          ============ This is the object of the class
+
+
+
+Flight slcToDallas;
+
+slcToDallas = new Flight;
+
+both the object of class will get seats = 150 and passengers = 0
+
+
+
+slcToDallas.add1Passenger();           ===== This is how we call the method of the class
+
+The moment I call on the class, the slcToDallas will have 150 seats and 1 passenger while nyctoSf will have the 150 seats and 0 passenger since the class hasn't been called.
+
+
+
+
+Basic Access Modifier:
+
+These are used for putting restrictions
+
+1) Public Access Modifiers = Everywhere
+2) Private Access Modifies = Only within the own class
+
+
+All those things which you want to use outside the class make them public and which we don't want to use outside the class make them private.
+
+
+
+public class flight{                
+ 
+private int passengers;
+private int seats;                 
+
+
+public Flight() {
+
+seats = 150;
+passengers = 0;
+
+}
+
+public void add1Passenger(){  
+ 
+ if (passengers < seats) {
+
+passengers = passengers + 1;
+} 
+
+else{
+handleToMany()
+}
+
+}
+
+
+private void handleToMany(){  
+  System.out.println("Too many passengers")
+}
+
+}
 
 
 
